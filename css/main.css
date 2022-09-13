@@ -3,12 +3,21 @@
     box-sizing: border-box;
 }
 
-html {
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+body {
     font-family: Arial, sans-serif;
     font-size: 100%;
     font-weight: 400;
     color: #2B2D42;
     background-color: #EDF2F4   ;
+    background-image: url('../img/backgrounds/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 body {
@@ -90,7 +99,8 @@ label input:checked + span {
     font-weight: bold;
 }
 
-select {
+select,
+input:not([type="checkbox"]):not([type="radio"]) {
     width: 100%;
     padding: 1em;
     border: 2px solid #2B2D42;
@@ -99,6 +109,16 @@ select {
     font-size: inherit;
     font-family: inherit;
 }
+
+select:invalid,
+input:invalid:not([type="checkbox"]):not([type="radio"]) {
+    border-color: #D90429;
+}
+
+/*select:valid,*/
+/*input:valid:not([type="checkbox"]):not([type="radio"]) {*/
+/*    border-color: darkgreen;*/
+/*}*/
 
 fieldset {
     border: 2px solid #2B2D42;

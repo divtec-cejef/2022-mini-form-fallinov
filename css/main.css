@@ -16,6 +16,14 @@ body {
     margin: 2rem auto;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 1px #2B2D42;
+    opacity: 80%;
+}
+
 a {
     color: #EF233C;
     text-decoration: none;
@@ -42,5 +50,36 @@ button[type="reset"] {
     background-color: #8D99AE;
     color: #2B2D42;
 }
+
+/********* Formulaires *********/
+form {
+    background-color: rgba(255,255,255,.8);
+    border: 6px solid #2B2D42;
+    padding: 20px;
+    margin: 2em auto 80px;
+    max-width: 450px;
+    min-width: 300px;
+}
+
+form ul {
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+form li:last-child {
+    margin: 0;
+}
+
+
+
+
+
+
+
 
 
